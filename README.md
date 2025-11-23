@@ -62,12 +62,13 @@ Add the package to your `packages.yml`:
 packages:
   - package: saravanpandic/AI_Cortex_Snowflake
     version: ">=0.1.0"
+```
 
 
 🚀 Usage
 1️⃣ Fetch a model’s raw code (Stable)
-
+```
 dbt run-operation Ai_Debug --args '{"model_name": "my_first_dbt_model"}'
-
+```
 This prints the model exactly as stored in your /models/ directory.
 
