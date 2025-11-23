@@ -30,11 +30,8 @@ Useful for:
 
 ---
 
-## 🧪 Beta Features (Early Access)
 
-These are not considered stable yet and may change in future versions.
-
-### `Ai_Validate_Model` *(beta)*
+### `Ai_Debug_Model` *()*
 Uses Snowflake Cortex AI to:
 
 - Validate SQL inside dbt models  
