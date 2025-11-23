@@ -61,11 +61,28 @@ packages:
     version: ">=0.1.0"
 ```
 
+## 🛠️ Prerequisites for Enabling Snowflake Cortex
+Before using any AI features in this package (such as Ai_Validate_Model), Snowflake Cortex must be enabled at the account level.
 
-🚀 Usage
+Your Snowflake administrator must run:
+```
+ALTER ACCOUNT SET CORTEX_ENABLED_CROSS_REGION = 'ANY_REGION';
+
+```
+This enables Cortex usage across supported regions and activates the AI functions required by this package
+
+-------
+
+
+## Usage Ai_Debug
+
 1️⃣ Fetch a model’s raw code (Stable)
 ```
 dbt run-operation Ai_Debug --args '{"model_name": "my_first_dbt_model"}'
 ```
+### Arguments:
+- `model_name` (required): The model you wish to generate unit testing YAML for.
+- `inline_columns` (optional, default=False): Whether you want all columns on the same line.
+
 This prints the model exactly as stored in your /models/ directory.
 
