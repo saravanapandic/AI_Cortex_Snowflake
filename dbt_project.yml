@@ -5,6 +5,9 @@
 name: 'Ai_Cortex'
 version: '1.0.0'
 
+
+require-dbt-version: [">=1.1.0", "<3.0.0"]
+
 # This setting configures which "profile" dbt uses for this project.
 profile: 'Ai_Cortex'
 

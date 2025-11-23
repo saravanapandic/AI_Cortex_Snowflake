@@ -2,6 +2,10 @@
 
 A dbt package providing AI-powered utilities to inspect, debug, and (in future releases) validate or auto-correct dbt models using Snowflake Cortex AI.
 
+
+## package available warehouse 
+   Snowflake
+
 This package is in early development.  
 **`Ai_Debug` is the only stable feature today.**  
 Additional AI-assisted features are currently in **beta**.
