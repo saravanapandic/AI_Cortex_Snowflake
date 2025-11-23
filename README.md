@@ -43,7 +43,7 @@ Uses Snowflake Cortex AI to:
   - `"error_reason"` – what was fixed
   - `"able_correct"` – flag indicating correction safety
 
-### Planned Features (Upcoming)
+### Features (Upcoming)
 - **Ai_AutoFix** — apply AI corrections back into model files  
 - **Ai_Documentation_Generator** — generate doc blocks & column descriptions  
 - **Ai_Test_Generator** — auto-create dbt tests  
