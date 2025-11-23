@@ -74,7 +74,7 @@ This enables Cortex usage across supported regions and activates the AI function
 -------
 
 
-## Usage Ai_Debug
+## 1 Usage Ai_Debug
 
 1️⃣ Fetch a model’s raw code (Stable)
 ```

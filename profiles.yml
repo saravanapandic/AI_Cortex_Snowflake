@@ -3,15 +3,13 @@ Ai_Cortex:
   outputs:
     dev:
       type: snowflake
-      account: GXUGAIL-QU64760
 
-      # User/password auth
-      user: saravanapandi
-      password: Abcd@123456789
-
-      role: accountadmin
-      database: ai_cortex
-      warehouse: compute_wh
-      schema: public
-      threads: 8
-      client_session_keep_alive: False
+      account: "{{ env_var('SF_ACCOUNT', 'false') }}"
+      user: "{{ env_var('SF_USER', 'false') }}"
+      password: "{{ env_var('SF_PASSWORD', 'false') }}"
+      role: "{{ env_var('SF_ROLE', 'false') }}"
+      database: "{{ env_var('SF_DATABASE', 'false') }}"
+      warehouse: "{{ env_var('SF_WAREHOUSE', 'false') }}"
+      schema: "{{ env_var('SF_SCHEMA', 'false') }}"
+      threads: "{{ env_var('SF_THREADS', '8') }}"
+      client_session_keep_alive: "{{ env_var('SF_KEEP_ALIVE', 'false') }}"
