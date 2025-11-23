@@ -1,0 +1,17 @@
+Ai_Cortex:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: GXUGAIL-QU64760
+
+      # User/password auth
+      user: saravanapandi
+      password: Abcd@123456789
+
+      role: accountadmin
+      database: ai_cortex
+      warehouse: compute_wh
+      schema: public
+      threads: 8
+      client_session_keep_alive: False
